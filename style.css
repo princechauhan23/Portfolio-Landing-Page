@@ -1,0 +1,424 @@
+body{
+    margin: 0px;
+}
+#body-header{
+    height: 65vh;;
+    opacity:0.8;
+    background-image: url(images/beach.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.Horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    padding-top: 20px;
+    margin: 0px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.Horizontal-list li{
+    display: inline;
+    margin: 0px,8px,8px,0px;
+}
+
+.Horizontal-list li a{
+    color:white;
+    text-decoration: none;
+    margin: 10px;
+    transition: color 0.5s, border-bottom 4s;
+
+}
+
+.Horizontal-list li a:hover{
+    color: grey;
+    border-bottom: 1px solid white;
+}
+
+#My_Name{
+    color: white;
+    text-align-last: center;
+    margin-bottom: 0px;
+    margin-top: 120px;
+    font-size: 50px;
+}
+
+.Horizontal-list{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.icon-list li{
+    border-radius: 50%;
+}
+.icon-list li:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
+
+.icon-list li a img{
+    width: 1rem;
+    padding: 8px;
+
+}
+
+/* About section */
+
+#about{
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#my-image{
+    height: 14rem;
+    width: 14rem;
+    margin: auto;
+    margin-top: -14vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    border: 1px solid lightgray;
+    box-shadow:0px 0px 2px 3px lightgray
+}
+#para{
+    margin: 70px;
+    margin-top: 40px;
+}
+
+#about-para{
+    font-size: 19px;
+    color: grey;
+}
+.text-color{
+    color: #164a9d
+}
+
+
+/* SKills */
+
+#skills{
+    background: rgb(177, 177, 177);
+}
+.section-header{
+    padding-top: 60px;
+    color: rgb(36, 20, 211);
+    display: flex;
+    justify-content: center;
+}
+.section-div1{
+    font-size: 23px;
+}
+#skill-heading{
+    vertical-align: middle;
+    margin-top: -8px;
+    padding-left: 12px;
+    font: 30px "Georgia";
+}
+#skill-content{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.center{
+    height: 35px;
+    width: 160px;
+    margin: 40px 80px ;
+    color: white;
+    background: rgb(160, 158, 158);
+    display: flex;
+    justify-content:flex-start;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 20px;
+    box-shadow:0px 0px 2px 1px rgb(206, 206, 206);
+}
+
+.skill-para{
+    border:1px solid rgb(206, 206, 206);
+    border-radius: 20px 1px 1px 20px;
+    box-shadow: 0px 0px 2px 1px rgb(206, 206, 206);
+}
+.center p{
+    margin: 5px;
+}
+.skillpara1{
+    width: 50%;
+    background: rgb(36, 20, 211);
+}
+.skillpara2{
+    width: 80%;
+    background: red;
+}
+.skillpara3{
+    width: 80%;
+    background: rgb(133, 104, 179);
+}
+.skillpara4{
+    width: 60%;
+    background: rgb(2, 117, 2);
+}
+.skillpara5{
+    width: 50%;
+    background: rgb(36, 20, 211);
+}
+.skillpara6{
+    width: 80%;
+    background: rgb(133, 104, 179);
+}
+
+/* Work Experience Section  */
+#experience-heading{
+    vertical-align: middle;
+    margin-top: -2px;
+    padding-left: 12px;
+    font: 30px "Georgia";
+}
+.timeline{
+    position: relative;
+    width: 80%;
+    left: 10%;
+    /* border: 2px solid black; */
+    margin-top: 30px;
+
+}
+.timeline-box{
+    position: relative;
+    width: 40%;
+    margin: 5px;
+    left: 5%;
+    min-height: 150px;
+    /* border: 2px solid black; */
+}
+.timeline-box h1{
+    text-align: right;
+    margin: 3px;
+    color: rgb(36, 20, 211);
+}
+.exper-heading::before{
+    content: '';
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000030_1550710829_ninjasicon.png);
+    background-size: cover;
+    position: absolute;
+    height: 2.5rem;
+    width: 2.5rem;
+    left: 2px;
+    top: 10px;
+}
+.edu-heading::before{
+    content: '';
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000032_1550746413_iiitd_logo.png);
+    background-size: cover;
+    position: absolute;
+    height: 30px;
+    width: 50px;
+    left: 2px;
+    top: 10px;
+}
+.timeline-box h3{
+    text-align: right;
+    margin: 2px;
+    color: rgb(228, 112, 4);
+}
+.timeline-box h4{
+    text-align: right;
+    margin: 2px;
+    color: gray;
+}
+.timeline-box p{
+    font-size: 15px;
+    color: grey;
+    text-align: justify ;
+}
+
+.timeline-box:nth-child(2n){
+    left : 54%;
+}
+
+.timeline-box:nth-child(2n+1)::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    right: -13.3%;
+    border-radius: 50%;
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: rgb(172, 171, 171);
+    z-index: 1;
+
+}
+.timeline-box:nth-child(2n)::after{
+    content: '';
+    position: absolute;
+    top: 30%;
+    left: -12.3%;
+    border-radius: 50%;
+    width: 0.9rem;
+    height: 0.9rem;
+    background-color: rgb(172, 171, 171);
+    z-index: 1;
+
+}
+
+.timeline-divider{
+    position: absolute;
+    height: 75%;
+    width: 0;
+    border: 2px dashed #0096fa6b;
+    top: 10%;
+    left: 50%;
+}
+.timeline-traveller{
+    position: sticky;
+    top: 15%;
+    color: rgb(36, 20, 211);
+    transform: rotate(90deg);
+    font-size: 20px;
+    z-index: 2;
+}
+
+/* Education Section */
+#education-heading{
+    vertical-align: middle;
+    margin-top: -6px;
+    padding-left: 12px;
+    font: 30px "Georgia";
+}
+
+
+/* Portfolio Section */
+#portfolio-heading{
+    vertical-align: middle;
+    margin-top: -6px;
+    padding-left: 12px;
+    font: 30px "Georgia";
+}
+#portfolio-div1{
+    height: auto;
+    width: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.portfolio-div2{
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000025_1550237330_codezen_2.png);
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+    padding: 110px;
+    margin:50px;
+}
+.portfolio-div3{
+    background-image: url(https://ninjasfiles.s3.amazonaws.com/asset_0000000000000024_1550237299_codezen.png);
+    background-size: cover;
+    height: 50px;
+    width: 100px;
+    padding: 110px;
+    margin: 50px;
+}
+
+
+/* Contact Section */
+
+#contact{
+    padding-bottom: 5px ;
+    background:linear-gradient(80deg, rgb(29, 29, 118), rgb(83, 4, 83));
+    
+}
+#contact-header{
+    padding-top: 40px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#contact-div1{
+    font-size: 23px;
+}
+
+#contact-heading{
+    vertical-align: middle;
+    margin-top: -15px;
+    padding-left: 12px;
+    font: 40px "Georgia";
+}
+#contact-message{
+    height: auto;
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+}
+#contact-div2{
+    height:auto;
+    width: 75rem;
+    margin-right: 100px;
+
+}
+
+
+#contact-name{
+    width: 100%;
+    background: none;
+    margin: 20px 0px 15px;
+    border: 0px;
+    border-bottom: 2px solid white;
+}
+#contact-email{
+    width: 100%;
+    background: none;
+    margin: 20px 0px 15px;
+    border: 0px;
+    border-bottom: 2px solid white;
+}
+#contact-text{
+    width: 100%;
+    background: none;
+    margin: 30px 0px 15px;
+    border: 0px;
+    border-bottom: 2px solid white;
+}
+#contact-button{
+    background: none;
+    margin: 20px;
+    border: 2px solid white;
+    padding: 7px;
+    color: white;
+    
+}
+#submit-button-div{
+    display: flex;
+    justify-content: center;
+}
+
+
+#contact-div3 h1{
+    color: white;
+    margin: 12px 0px 12px;
+}
+#contact-div3 p{
+    color: white;
+    margin: 14px 0px 14px;
+}
+#contact-div3 div{
+    color: white;
+    display: flex;
+}
+#contact-div3 div p{
+    margin: -12px 0px 5px;
+    padding: 10px;
+}
+
+#contact-list-icon{
+    margin-bottom: 50px;
+}
+
+#contact-list-icon ul li{
+margin: 7px;
+}
+
